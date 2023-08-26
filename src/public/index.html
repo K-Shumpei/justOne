@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+
+  <!-- HTML制御 -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="./client.js"></script>
+  <script type="text/javascript" src="./scriptForHTML/base.js"></script>
+</head>
+
+<body>
+  <!-- プレイヤー名入力欄 -->
+  <div id="nameField">
+    名前：
+    <input id="inputName" type="text">
+    <input id="sendName" type="button" value="送信" onclick="sendName()">
+  </div>
+
+  <!-- 参加者の名前画面 -->
+  <div id="entryNameField" style="display: none;">
+    参加者：
+    <span id="entryName"></span>
+  </div>
+
+  <!-- ゲーム開始ボタン -->
+  <div id="gameStartButton" style="display: none;">
+    <input type="button" value="ゲーム開始" onclick="gameStart()">
+  </div>
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>
